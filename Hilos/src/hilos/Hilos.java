@@ -3,21 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package os;
+package hilos;
+
 /**
  *
  * @author christiandejmorenomarin
  */
-public class OS {
+public class Hilos {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        holaMundo holi = new holaMundo();
-        // TODO code application logic here
-        holi.decirHola();
+        
+        
+        SaludoSleep S1 = new SaludoSleep (100);
+        SaludoSleep S2 = new SaludoSleep (2000);
+        SaludoSleep S3 = new SaludoSleep (4000);
+        
+        S1.start();
+        S2.start();
+        S3.start();
+        
+        System.out.println("Termina el hilo principal");
     }
     
 }
