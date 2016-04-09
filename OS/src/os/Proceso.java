@@ -11,11 +11,11 @@ import java.util.Scanner;
  *
  * @author christiandejmorenomarin
  */
-public class Proceso {
+public class Proceso extends Thread {
     
     private int[] T;
-	private float[] P;
-	private int [] lleg;
+    private float[] P;
+    private int [] lleg;
     private int [] co;
     private int [] p;
     private int [] vuelta;
