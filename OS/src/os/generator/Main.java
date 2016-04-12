@@ -6,13 +6,13 @@
 package os.generator;
 
 /**
- *
- * @author Alfredo
+ * Main
+ * @author Elizabeth
  */
 public class Main {
     public static void main(String[] args) {
-       Interfaz interfaz=new Interfaz ();
-       interfaz.captura();
-       interfaz.mostrarCola();
+       Generador generador=new Generador();
+       generador.captura();
+       generador.mostrarCola();
     }
 }

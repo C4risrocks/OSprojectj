@@ -9,10 +9,10 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 /**
- *
- * @author Alfredo
+ * Generador de Procesos.
+ * @author AElizabeth
  */
-public class Interfaz {
+public class Generador {
     
     private Scanner teclado;
     private int num_procesos;
@@ -88,6 +88,13 @@ public class Interfaz {
         }
         return false;
     }
-    
+
+    /**
+     * Obtiene la lista de procesos:
+     * @return Lista de Procesos
+     */
+    public LinkedList<Process> getLista_procesos() {
+        return lista_procesos;
+    }
     
 }
