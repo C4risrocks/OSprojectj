@@ -10,7 +10,8 @@ package os.generator;
  * Todos los tiempos se simularan en milisegundo.
  * @author Elizabeth
  */
-public class Process extends Thread{
+public class Process extends Thread implements Comparable<Process>{
+   
     // Identificador
     private String id; 
     // Nombre del proceso
@@ -75,9 +76,9 @@ public class Process extends Thread{
         this.prioridad = prioridad;
     }
 
-    public int getTiempo_llegada() {
+    /*public  int getTiempo_llegada() {
         return tiempo_llegada;
-    }
+    }*/
 
     public void setTiempo_llegada(int tiempo_llegada) {
         this.tiempo_llegada = tiempo_llegada;
@@ -94,5 +95,23 @@ public class Process extends Thread{
                 + "Tiempo de llegada: "+tiempo_llegada+"\n";
         return cadena;
     }
+
+    @Override
+    public int compareTo(Process o) {
+        
+        int compareTiempoLL = o.tiempo_llegada;
+		if (this.tiempo_llegada > compareTiempoLL) {
+			return 1;
+		} else if (this.tiempo_llegada == compareTiempoLL) {
+			return 0;
+		} else {
+			return -1;
+		}
+    }
+        
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     
+
 }
+    
+

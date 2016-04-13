@@ -5,6 +5,7 @@
  */
 package os.generator;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -73,6 +74,10 @@ public class Generador {
         lista_procesos.add(process);
     }
     
+    public void eliminar_proceso(Process process){
+        lista_procesos.remove(lista_procesos.indexOf(process.getProcesoId()));
+    }
+    
     
     public void mostrarCola(){
         for (int i = 0; i < num_procesos; i++) {
@@ -95,6 +100,18 @@ public class Generador {
      */
     public LinkedList<Process> getLista_procesos() {
         return lista_procesos;
+    }
+    
+    // Planificador de procesos!!!!!!
+    
+    public void  roundRobin(){
+        
+        Collections.sort(lista_procesos);
+        
+    }
+    
+    public void prioridadCompartida(){
+        
     }
     
 }
