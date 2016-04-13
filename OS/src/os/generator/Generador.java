@@ -108,6 +108,7 @@ public class Generador {
         
         Collections.sort(lista_procesos);
         
+        
     }
     
     public void prioridadCompartida(){
