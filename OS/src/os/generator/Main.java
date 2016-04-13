@@ -14,7 +14,8 @@ public class Main {
        Generador generador=new Generador();
        generador.captura();
        generador.mostrarCola();
-       
+       generador.roundRobin();
+       generador.mostrarCola();
        
        
     }
