@@ -26,6 +26,7 @@ public class Generador {
         
         int i;
         for (i=0; i<num_procesos;i++){
+            System.out.println(" ");
             System.out.println("Generando proceso "+i);
             Process p = generar_proceso();
             agregar_proceso(p);
@@ -101,18 +102,4 @@ public class Generador {
     public LinkedList<Process> getLista_procesos() {
         return lista_procesos;
     }
-    
-    // Planificador de procesos!!!!!!
-    
-    public void  roundRobin(){
-        
-        Collections.sort(lista_procesos);
-        
-        
-    }
-    
-    public void prioridadCompartida(){
-        
-    }
-    
 }

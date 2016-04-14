@@ -5,6 +5,8 @@
  */
 package os.generator;
 
+import java.util.Comparator;
+
 /**
  * Proceso:
  * Todos los tiempos se simularan en milisegundo.
@@ -95,21 +97,20 @@ public class Process extends Thread implements Comparable<Process>{
                 + "Tiempo de llegada: "+tiempo_llegada+"\n";
         return cadena;
     }
-
+    
+    
     @Override
     public int compareTo(Process o) {
         
-        int compareTiempoLL = o.tiempo_llegada;
-		if (this.tiempo_llegada > compareTiempoLL) {
+        int comparePrioridad = o.prioridad;
+		if (this.prioridad > comparePrioridad) {
 			return 1;
-		} else if (this.tiempo_llegada == compareTiempoLL) {
+		} else if (this.prioridad == comparePrioridad) {
 			return 0;
 		} else {
 			return -1;
 		}
     }
-        
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     
 
 }

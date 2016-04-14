@@ -11,11 +11,13 @@ package os.generator;
  */
 public class Main {
     public static void main(String[] args) {
-       Generador generador=new Generador();
+       Generador generador = new Generador();
        generador.captura();
        generador.mostrarCola();
-       generador.roundRobin();
-       generador.mostrarCola();
+       Planificador planificador = new Planificador();
+       planificador.prioridadCompartida(generador);
+       planificador.mostrarCola();
+       
        
        
     }
