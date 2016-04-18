@@ -15,9 +15,10 @@ public class Main {
        generador.captura();
        generador.mostrarCola();
        Planificador planificador = new Planificador();
-       planificador.prioridadCompartida(generador);
+       //planificador.prioridadCompartida(generador);
        //planificador.mostrarCola();
        
+       planificador.checkMemorySpace(generador, 2048);
        
        
     }
