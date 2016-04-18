@@ -16,7 +16,7 @@ public class Main {
        generador.mostrarCola();
        Planificador planificador = new Planificador();
        planificador.prioridadCompartida(generador);
-       planificador.mostrarCola();
+       //planificador.mostrarCola();
        
        
        
