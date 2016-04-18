@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package os.generator;
 
 /**
@@ -18,8 +19,10 @@ public class Main {
        //planificador.prioridadCompartida(generador);
        //planificador.mostrarCola();
        
-       planificador.checkMemorySpace(generador, 2048);
+       // TODO Falta pedir espacio en memoria
+       //planificador.checkMemorySpace(generador, 2048);
        
+       planificador.roundRobin(generador, 2048, 2);
        
     }
 }
