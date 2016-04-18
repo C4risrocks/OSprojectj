@@ -11,4 +11,16 @@ package os.generator;
  */
 public class PlanificadorCPU {
     
+    public void cpuRoundRobin(){
+        
+        System.out.println("Algoritmo no implementado aún ");
+        
+    }
+    
+    public void cpuPrioridadCompartida(){
+        
+        
+        
+    }
+    
 }

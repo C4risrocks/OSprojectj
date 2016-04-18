@@ -98,6 +98,12 @@ public class Process extends Thread implements Comparable<Process>{
         return cadena;
     }
     
+    public void run(){
+        
+        System.out.println(this.toString());
+        
+    }
+    
     
     @Override
     public int compareTo(Process o) {

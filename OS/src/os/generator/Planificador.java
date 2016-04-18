@@ -70,7 +70,6 @@ public class Planificador {
             System.out.println(colaListaExec.get(i));
         }
     }
-
     /**
      * Verifica si el espacio en memoria soporta los procesos en la cola de
      * Procesos.
@@ -95,10 +94,5 @@ public class Planificador {
                     System.out.println("No hay suficiente espacio en memoria");
                     return false;
                 }
-            }
-            process = false;
-        }
-        return true;
-    }
 
 }
